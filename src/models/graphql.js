@@ -1,31 +1,32 @@
 import { buildSchema as schema } from 'graphql';
 import { graphqlHTTP as expressGraphql } from 'express-graphql';
-import { getProductById, getProducts } from '../handlers/graphql.js';
-import { apiMethods as api } from '../api/api_array.js';
+import { ApiGraphql } from '../api/api_graphql.js';
 
 const graphqlSchema = schema(`
-    input ProductInput {
-        name: String,
-        price: Float,
-        img: String
-    }
     type Product {
-        id: ID!
+        id: Int,
         name: String,
         price: Float,
         img: String
     }
     type Query {
-        getProductByID(id:ID!): Product,
+        getProductById(id:Int!): Product,
         getProducts: [Product],
     }
 `);
 
-export const graphqlMidWare = expressGraphql({
-  schema: graphqlSchema,
-  rootValue: {
-    getProductById,
-    getProducts,
-  },
-  graphiql: true,
-});
+export class GraphqlMidWare {
+  constructor() {
+    const api = new ApiGraphql();
+    return expressGraphql({
+      schema: graphqlSchema,
+      rootValue: {
+        getProductById: api.getProductById,
+        getProducts: api.getProducts,
+      },
+      graphiql: true,
+    });
+  }
+}
+
+export const graphqlMidWare = new GraphqlMidWare();

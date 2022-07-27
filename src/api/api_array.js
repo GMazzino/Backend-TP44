@@ -12,7 +12,7 @@ class Product {
 class ApiMethods {
   constructor() {
     this.products = [];
-    //Productos a modo de ejemplo
+    //Example products
     this.products.push(
       new Product(
         {
@@ -87,10 +87,10 @@ class ApiMethods {
 
   getProductById(id) {
     if (!isNaN(parseInt(id))) {
-      const selectedProduct = this.products.find((product) => product.id === parseInt(id));
+      const selectedProduct = this.products.find((product) => parseInt(product.id) === parseInt(id));
       return selectedProduct != undefined
         ? { status: 200, content: selectedProduct }
-        : { status: 200, content: { error: `Producto no encontrado` } };
+        : { status: 204, content: { error: `Producto no encontrado` } };
     } else {
       logger.error('Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request');
       return { status: 400, content: { error: `Error en la petición` } };
@@ -149,4 +149,3 @@ class ApiMethods {
   }
 }
 export { ApiMethods as Api };
-export const apiMethods = new ApiMethods();

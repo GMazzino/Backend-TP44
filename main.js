@@ -20,6 +20,8 @@ import { name } from './src/handlers/auth/auth.js';
 import { passportLocal } from './src/handlers/passport/passport_local.js';
 import logger from './src/utils/logger.js';
 
+logger.warn(`${JSON.stringify(graphqlMidWare.api)}`);
+
 logger.info('Starting App');
 logger.info(`Logger level: ${logger.level}`);
 const app = express();
@@ -29,7 +31,6 @@ const serverPort = process.env.PORT || appConfig.PORT;
 const mode = args.mode;
 const msgs = [];
 const cpus = os.cpus().length;
-
 logger.info('Configuring websocket');
 io.on('connection', async (socket) => {
   logger.info('User connected');

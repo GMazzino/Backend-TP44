@@ -1,0 +1,19 @@
+[2022-07-26 23:30:24.359] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:35:14.648] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:35:25.253] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:35:28.635] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:36:34.495] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:40:08.350] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:45:27.773] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:47:35.448] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-26 23:48:08.258] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-27 00:50:23.417] ERROR: products: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2022-07-27 00:50:36.491] ERROR: products: undefined
+[2022-07-27 01:03:51.482] ERROR: products: undefined
+[2022-07-27 01:05:25.084] ERROR: products: undefined
+[2022-07-27 01:06:47.532] ERROR: products: undefined
+[2022-07-27 01:08:20.822] ERROR: products: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2022-07-27 01:32:36.749] ERROR: products: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2022-07-27 01:32:45.530] ERROR: products: undefined
+[2022-07-27 14:12:46.642] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
+[2022-07-27 14:15:41.939] ERROR: Module: api_array.js Class: ApiMethods Method: getProductById Error: Bad request
