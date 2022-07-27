@@ -1,0 +1,41 @@
+{
+  "type": "module",
+  "name": "tp-clase-29",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "start": "node main.js"
+  },
+  "author": "Gustavo Mazzino",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "@types/passport-local": "^1.0.34",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "express-session": "^1.17.3",
+    "forever": "^4.0.3",
+    "graphql": "^16.5.0",
+    "minimist": "^1.2.6",
+    "mongoose": "^6.3.4",
+    "node": "^17.3.0",
+    "normalizr": "^3.6.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.4.1",
+    "winston": "^3.7.2"
+  },
+  "engines": {
+    "node": "^17.3.0"
+  },
+  "devDependencies": {
+    "autocannon": "^7.9.0"
+  }
+}
